@@ -1,0 +1,20 @@
+<section class="p-4">
+    <div class="container-fluid">
+        <h1 class="text-center">Додати новий запис</h1>
+        <div class="row">
+            <a class="btn btn-outline-secondary w-auto mb-3" href="/">Повернутися на головну</a>
+            <form action="/new" method="POST">
+                <div class="mb-3">
+                <label for="title" class="form-label">Заголовок:</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Опис:</label>
+                <textarea class="form-control" id="description" name="description" required></textarea>
+            </div>
+                <button type="submit" class="btn btn-secondary">Додати</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<section class="p-4">
+    <div class="container-fluid">
+        <h1 class="text-center">Поради щодо здорового способу життя</h1>
+        <div class="row">
+            <a class="btn btn-secondary w-auto mt-2 mb-2" href="/new">Додати запис</a>
+        <div class="list-group">
+            <% tips.forEach(tip => { %>
+            <a href="/item/<%= tip.id %>" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><%= tip.title %></h5>
+              </div>
+              <p class="mb-1"><%= tip.description %></p>
+            </a>
+            <% }); %>
+          </div>
+          </div>
+    </div>
+</section>
